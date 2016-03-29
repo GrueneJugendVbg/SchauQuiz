@@ -1,0 +1,47 @@
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.side {
+	height: 100%;
+	width: 50%;
+}
+
+.banner {
+	img {
+		zoom: 40%;
+		margin-bottom: -8%;
+	}
+}
+
+.side.right {
+	background-image:  url("../img/backgroundA4_lighter.jpg"), url("../img/middle_east_map_lebanon-01.png");
+	background-blend-mode: multiply;
+	background-size: 100% 100%, auto auto;
+	background-position: 0% 0%, center 70%;
+	float: right;
+
+	.banner {
+		img {
+			float: right;
+		}
+	}
+}
+
+.side.left {
+	background-image:  url("../img/backgroundA4.jpg"), url("../img/europe_map_austria-01.png");
+	background-blend-mode: multiply;
+	background-size: 100% 100%, auto auto;
+	background-position: 0% 0%, center 70%;
+	float: left;
+}
+
+.border {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+ 	img {
+ 		height: 100%;
+ 	}
+}
