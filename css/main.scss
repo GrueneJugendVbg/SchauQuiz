@@ -9,10 +9,16 @@ body {
 }
 
 .banner {
+	
 	img {
 		zoom: 40%;
 		margin-bottom: -8%;
 	}
+}
+
+.banner.bottom {
+	position: absolute;
+	bottom: 20%;
 }
 
 .side.right {
@@ -23,8 +29,10 @@ body {
 	float: right;
 
 	.banner {
+		right: 0px;
 		img {
 			float: right;
+			right: 0px;
 		}
 	}
 }
@@ -35,6 +43,14 @@ body {
 	background-size: 100% 100%, auto auto;
 	background-position: 0% 0%, center 70%;
 	float: left;
+
+	.banner {
+		left: 0px;
+		img {
+			float: left;
+			left: 0px;
+		}
+	}
 }
 
 .border {
