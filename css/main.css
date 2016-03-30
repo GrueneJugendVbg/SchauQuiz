@@ -7,8 +7,35 @@ body {
   width: 50%; }
 
 .banner img {
+  display: block;
   zoom: 40%;
   margin-bottom: -8%; }
+.banner input {
+  position: absolute;
+  display: block;
+  border: 0px solid black;
+  border-radius: 0;
+  background-color: white;
+  margin-left: -2px;
+  margin-right: -2px;
+  height: 50px;
+  width: 300px;
+  font-family: "HelveticaNeue-CondensedBlack";
+  font-size: 28pt;
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: none; }
+.banner .correct {
+  background-color: green;
+  color: white; }
+.banner .wrong {
+  background-color: red;
+  color: white; }
 
 .banner.bottom {
   position: absolute;
@@ -21,10 +48,15 @@ body {
   background-position: 0% 0%, center 70%;
   float: right; }
   .side.right .banner {
-    right: 0px; }
+    right: 0px;
+    float: right;
+    text-align: right; }
     .side.right .banner img {
-      float: right;
       right: 0px; }
+    .side.right .banner input {
+      right: 0px;
+      transform: rotate(4deg);
+      text-align: right; }
 
 .side.left {
   background-image: url("../img/backgroundA4.jpg"), url("../img/europe_map_austria-01.png");
@@ -33,14 +65,21 @@ body {
   background-position: 0% 0%, center 70%;
   float: left; }
   .side.left .banner {
-    left: 0px; }
+    left: 0px;
+    float: left;
+    text-align: left; }
     .side.left .banner img {
-      float: left;
       left: 0px; }
+    .side.left .banner input {
+      left: 0px;
+      transform: rotate(-4deg);
+      text-align: left; }
 
 .border {
   position: absolute;
+  pointer-events: none;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  height: 100%; }
   .border img {
     height: 100%; }
